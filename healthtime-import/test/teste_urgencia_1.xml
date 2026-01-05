@@ -1,0 +1,24 @@
+<EmergencyReport>
+  <Header>
+    <HospitalId>999</HospitalId>
+    <SubmissionTime>2026-02-16T12:00:00</SubmissionTime>
+  </Header>
+  <Services>
+    <Service>
+      <Type code="1">Urgencia Geral</Type>
+      <Status>Open</Status>
+      <Triage>
+        <Level color="Red">
+          <WaitingCount>50</WaitingCount>
+          <UnderObservationCount>5</UnderObservationCount>
+          <AverageWaitTimeMinutes>120</AverageWaitTimeMinutes>
+        </Level>
+        <Level color="Yellow">
+          <WaitingCount>100</WaitingCount>
+          <UnderObservationCount>10</UnderObservationCount>
+          <AverageWaitTimeMinutes>60</AverageWaitTimeMinutes>
+        </Level>
+      </Triage>
+    </Service>
+  </Services>
+</EmergencyReport>

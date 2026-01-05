@@ -1,0 +1,85 @@
+{
+  "filename": "Hospitais.csv",
+  "description": "Catálogo de hospitais e instituições",
+  "columns": [
+    {
+      "name": "institutionId",
+      "type": "Integer",
+      "description": "Identificador único do hospital",
+      "required": true,
+      "primaryKey": true,
+      "example": "151"
+    },
+    {
+      "name": "HospitalName",
+      "type": "String",
+      "description": "Nome oficial do hospital/instituição",
+      "required": true,
+      "example": "Hospital de Santa Maria"
+    },
+    {
+      "name": "Address",
+      "type": "String",
+      "description": "Morada completa do hospital",
+      "required": true,
+      "example": "Avenida Professor Egas Moniz, 1649-035 Lisboa"
+    },
+    {
+      "name": "City",
+      "type": "String",
+      "description": "Cidade onde se localiza o hospital",
+      "required": true,
+      "example": "Lisboa"
+    },
+    {
+      "name": "Region",
+      "type": "String",
+      "description": "Região administrativa (NUTS II)",
+      "required": true,
+      "example": "Lisboa e Vale do Tejo, Norte, Centro, Alentejo, Algarve"
+    },
+    {
+      "name": "PostalCode",
+      "type": "String",
+      "description": "Código postal",
+      "required": true,
+      "format": "XXXX-XXX",
+      "example": "1649-035"
+    },
+    {
+      "name": "Phone",
+      "type": "String",
+      "description": "Número de telefone principal",
+      "required": false,
+      "example": "+351 217 805 000"
+    },
+    {
+      "name": "Email",
+      "type": "String",
+      "description": "Email institucional",
+      "required": false,
+      "format": "email",
+      "example": "geral@hospital.pt"
+    },
+    {
+      "name": "Latitude",
+      "type": "Decimal",
+      "description": "Coordenada geográfica - latitude",
+      "required": false,
+      "example": "38.7436"
+    },
+    {
+      "name": "Longitude",
+      "type": "Decimal",
+      "description": "Coordenada geográfica - longitude",
+      "required": false,
+      "example": "-9.1602"
+    }
+  ],
+  "notes": [
+    "Ficheiro de referência para dados de urgência e consultas/cirurgias",
+    "Campo Region permite agregações geográficas",
+    "Coordenadas GPS permitem visualizações em mapa"
+  ],
+  "relatedFiles": ["TemposEsperaEmergencia.csv", "TemposEsperaConsultaCirurgia.csv"]
+}

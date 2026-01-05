@@ -1,0 +1,60 @@
+{
+  "filename": "TemposEsperaConsultaCirurgia.csv",
+  "description": "Dados mensais de tempos médios de espera para consultas e cirurgias por especialidade",
+  "updateFrequency": "Mensal",
+  "columns": [
+    {
+      "name": "HospitalName",
+      "type": "String",
+      "description": "Nome completo do hospital/instituição de saúde",
+      "required": true,
+      "example": "Hospital de Santa Maria"
+    },
+    {
+      "name": "ServiceSK",
+      "type": "Integer",
+      "description": "Chave única do serviço (especialidade)",
+      "required": true,
+      "example": "12345",
+      "notes": "Referência para ficheiro Servicos.csv"
+    },
+    {
+      "name": "MonthPortuguese",
+      "type": "String",
+      "description": "Nome do mês em português",
+      "required": true,
+      "example": "Janeiro, Fevereiro, Março",
+      "allowedValues": [
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+      ]
+    },
+    {
+      "name": "Year",
+      "type": "Integer",
+      "description": "Ano de referência dos dados",
+      "required": true,
+      "example": "2025"
+    },
+    {
+      "name": "AverageWaitingTime_Speciality_Priority_Institution",
+      "type": "Decimal",
+      "description": "Tempo médio de espera (em dias) para consulta/cirurgia por especialidade, prioridade e instituição",
+      "required": true,
+      "unit": "dias",
+      "example": "45.5",
+      "notes": "Agrega dados de tempo médio independentemente do tipo (consulta ou cirurgia)"
+    }
+  ],
+  "notes": [
+    "Ficheiro unificado que contém dados de consultas E cirurgias",
+    "Para distinguir entre consulta e cirurgia, é necessário cruzar com Servicos.csv (campo TypeOfCareDescription)",
+    "Período de referência: Mês/Ano",
+    "Prioridade clínica pode ser obtida através do campo Priority em Servicos.csv"
+  ],
+  "relatedFiles": ["Servicos.csv", "Hospitais.csv"],
+  "dataQualityIssues": [
+    "Não há distinção explícita entre consulta e cirurgia (requer associação com Servicos.csv)",
+    "Prioridade clínica não está diretamente disponível (requer interpretação do campo Priority em Servicos.csv)"
+  ]
+}

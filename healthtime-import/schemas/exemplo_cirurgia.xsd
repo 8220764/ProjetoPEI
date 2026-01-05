@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="SurgeryReport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Header" type="HeaderType"/>
+                <xs:element name="Surgeries" type="SurgeriesType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="HeaderType">
+        <xs:sequence>
+            <xs:element name="HospitalId" type="xs:int"/>
+
+            <xs:element name="ReferencePeriod">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Year" type="xs:gYear"/>
+                        <xs:element name="Month" type="MonthType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SurgeriesType">
+        <xs:sequence>
+            <xs:element name="SurgeryEntry" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="SpecialtyName" type="xs:string"/>
+
+                        <xs:element name="WaitListCounts">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="NonOncological" type="xs:nonNegativeInteger"/>
+                                    <xs:element name="Oncological" type="xs:nonNegativeInteger"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="AverageWaitTimeDays">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="NonOncological" type="xs:decimal"/>
+                                    <xs:element name="Oncological" type="xs:decimal"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="MonthType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Janeiro"/>
+            <xs:enumeration value="Fevereiro"/>
+            <xs:enumeration value="Março"/>
+            <xs:enumeration value="Abril"/>
+            <xs:enumeration value="Maio"/>
+            <xs:enumeration value="Junho"/>
+            <xs:enumeration value="Julho"/>
+            <xs:enumeration value="Agosto"/>
+            <xs:enumeration value="Setembro"/>
+            <xs:enumeration value="Outubro"/>
+            <xs:enumeration value="Novembro"/>
+            <xs:enumeration value="Dezembro"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

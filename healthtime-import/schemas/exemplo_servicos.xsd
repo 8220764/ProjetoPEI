@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="ServicesReport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Services" type="ServicesListType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="ServicesListType">
+        <xs:sequence>
+            <xs:element name="ServiceEntry" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Code" type="xs:int"/>
+                        <xs:element name="Description" type="xs:string"/>
+                        <xs:element name="Type" type="ServiceTypeEnum"/>
+                        <xs:element name="PriorityCode" type="PriorityLevelType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="ServiceTypeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Cirurgia"/>
+            <xs:enumeration value="Consulta"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PriorityLevelType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

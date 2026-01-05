@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="EmergencyReport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Header" type="HeaderType"/>
+                <xs:element name="Services" type="ServicesType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="HeaderType">
+        <xs:sequence>
+            <xs:element name="HospitalId" type="xs:int"/>
+            <xs:element name="HospitalName" type="xs:string"/>
+            <xs:element name="SubmissionTime" type="xs:dateTime"/> </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ServicesType">
+        <xs:sequence>
+            <xs:element name="Service" type="ServiceType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ServiceType">
+        <xs:sequence>
+            <xs:element name="Type">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="code" type="xs:string" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Address" type="xs:string"/>
+            <xs:element name="Status" type="StatusType"/> <xs:element name="Triage" type="TriageType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TriageType">
+        <xs:sequence>
+            <xs:element name="Level" maxOccurs="5"> <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="WaitingCount" type="xs:nonNegativeInteger"/> <xs:element name="UnderObservationCount" type="xs:nonNegativeInteger"/>
+                        <xs:element name="AverageWaitTimeMinutes" type="xs:nonNegativeInteger"/>
+                    </xs:sequence>
+                    <xs:attribute name="color" type="ColorType" use="required"/> </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="ColorType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Red"/>
+            <xs:enumeration value="Orange"/>
+            <xs:enumeration value="Yellow"/>
+            <xs:enumeration value="Green"/>
+            <xs:enumeration value="Blue"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="StatusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Aberta"/>
+            <xs:enumeration value="Fechada"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,55 @@
+{
+  "filename": "Servicos.csv",
+  "description": "Catálogo de serviços/especialidades médicas disponíveis nos hospitais",
+  "columns": [
+    {
+      "name": "ServiceSK",
+      "type": "Integer",
+      "description": "Chave única do serviço",
+      "required": true,
+      "primaryKey": true,
+      "example": "12345"
+    },
+    {
+      "name": "SpecialtyDescription",
+      "type": "String",
+      "description": "Descrição da especialidade médica ou cirúrgica",
+      "required": true,
+      "example": "Cardiologia, Ortopedia, Pediatria"
+    },
+    {
+      "name": "TypeOfCareDescription",
+      "type": "String",
+      "description": "Tipo de cuidado prestado",
+      "required": true,
+      "allowedValues": ["Appointment", "Surgery"],
+      "mapping": {
+        "Appointment": "Consulta",
+        "Surgery": "Cirurgia"
+      }
+    },
+    {
+      "name": "Priority",
+      "type": "String",
+      "description": "Prioridade clínica e tipo de doença",
+      "required": true,
+      "example": "1 - Doença não oncológica, 3 - Doença oncológica",
+      "allowedValues": [
+        "1 - Doença não oncológica (Normal)",
+        "2 - Doença não oncológica (Prioritário)",
+        "3 - Doença oncológica (Muito Prioritário)"
+      ],
+      "notes": "Campo que combina prioridade clínica e tipo de lista de espera"
+    }
+  ],
+  "notes": [
+    "Ficheiro de referência para cruzamento com TemposEsperaConsultaCirurgia.csv",
+    "Campo Priority contém informação sobre oncológico/não oncológico",
+    "Campo TypeOfCareDescription permite distinguir consultas de cirurgias"
+  ],
+  "relatedFiles": ["TemposEsperaConsultaCirurgia.csv"],
+  "dataQualityIssues": [
+    "Não há campo específico para população alvo (adulto/criança)",
+    "Prioridade e tipo de lista estão combinados num único campo"
+  ]
+}

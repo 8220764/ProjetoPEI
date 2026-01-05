@@ -1,0 +1,131 @@
+﻿ServiceKey,Speciality,PriorityCode,PriorityDescription,TypeCode,TypeDescription
+1,Psiquiatria - Consulta Geral,3,Normal,2,Appointment
+2,Cirurgia Geral,2,Prioritário,2,Appointment
+3,Cirurgia Plástica e Reconstrutiva,2,Prioritário,2,Appointment
+4,Dermatologia - Rastreio Teledermatológico,2,Prioritário,2,Appointment
+5,Gastrenterologia,0,Sem prioridade atribuída,2,Appointment
+6,Genética médica,3,Normal,2,Appointment
+7,Ginecologia,2,Prioritário,2,Appointment
+8,Oncologia médica,2,Prioritário,2,Appointment
+9,Urologia,2,Prioritário,2,Appointment
+10,Estomatologia,0,Sem prioridade atribuída,2,Appointment
+11,Hematologia clínica,0,Sem prioridade atribuída,2,Appointment
+12,Neurocirurgia,0,Sem prioridade atribuída,2,Appointment
+13,Otorrinolaringologia,0,Sem prioridade atribuída,2,Appointment
+14,Pneumologia,0,Sem prioridade atribuída,2,Appointment
+15,Cirurgia Cardiotorácica,2,Prioritário,2,Appointment
+16,Oftalmologia,2,Prioritário,2,Appointment
+17,Ortopedia,2,Prioritário,2,Appointment
+18,Cardiologia,3,Normal,2,Appointment
+19,Medicina interna,3,Normal,2,Appointment
+20,Pediatria,3,Normal,2,Appointment
+21,Dermato-Venerologia,3,Normal,2,Appointment
+22,Psicologia,3,Normal,2,Appointment
+23,Reumatologia,3,Normal,2,Appointment
+24,Cuidados Paliativos,0,Sem prioridade atribuída,2,Appointment
+25,Endocrinologia - Nutrição,3,Normal,2,Appointment
+26,Medicina física e de reabilitação - Fisiatria,3,Normal,2,Appointment
+27,Cirurgia Cabeça e Pescoço,3,Normal,2,Appointment
+28,Endocrinologia,3,Normal,2,Appointment
+29,Cirurgia Torácica,0,Sem prioridade atribuída,2,Appointment
+30,Neurologia,3,Normal,2,Appointment
+31,Psiquiatria Geral Lisboa,3,Normal,2,Appointment
+32,Psiquiatria Geral Loures,3,Normal,2,Appointment
+33,Psiquiatria Geral Mafra,3,Normal,2,Appointment
+34,Psiquiatria Geral Odivelas,3,Normal,2,Appointment
+35,Psiquiatria Geral Sintra,3,Normal,2,Appointment
+36,Psiquiatria Geral Torres Vedras,0,Sem prioridade atribuída,2,Appointment
+37,Cirurgia - CR Cancro Hepatobilio/Pancreático,3,Normal,2,Appointment
+38,Cirurgia Geral - Obesidade,3,Normal,2,Appointment
+39,Diabetologia,1,Muito prioritário,2,Appointment
+40,Doenças infecciosas,3,Normal,2,Appointment
+41,Imuno-hemoterapia,3,Normal,2,Appointment
+42,Nefrologia,3,Normal,2,Appointment
+43,Medicina Interna - Doenças Auto-imunes,3,Normal,2,Appointment
+44,Angiologia/Cirurgia Vascular,1,Muito prioritário,2,Appointment
+45,Cardiologia Pediátrica,3,Normal,2,Appointment
+46,Anestesiologia,3,Normal,2,Appointment
+47,Ginecologia - Apoio à Fertilidade,3,Normal,2,Appointment
+48,Imunoalergologia,3,Normal,2,Appointment
+49,Obstetrícia,3,Normal,2,Appointment
+50,Psiquiatria da infância e da adolescência,3,Normal,2,Appointment
+51,Dor,3,Normal,2,Appointment
+52,Oftalmologia - Retinopatia Diabética Seguimento,3,Normal,2,Appointment
+53,Medicina Interna - Hepatites,3,Normal,2,Appointment
+54,Cirurgia Geral - Cirurgia de Ambulatório,3,Normal,2,Appointment
+55,Cirurgia Maxilo Facial,3,Normal,2,Appointment
+56,Cirurgia Pediátrica,3,Normal,2,Appointment
+57,Doenças Auto-imunes,3,Normal,2,Appointment
+58,Neuropediatria,3,Normal,2,Appointment
+59,Sono/Apneia do Sono/Pneumologia,3,Normal,2,Appointment
+60,Sono/Neurofisiologia,3,Normal,2,Appointment
+61,Endocrinologia - Teleconsulta,0,Sem prioridade atribuída,2,Appointment
+62,Paramiloidose/Neurologia,0,Sem prioridade atribuída,2,Appointment
+63,Nefrologia - Teleconsulta,3,Normal,2,Appointment
+64,Oftalmologia - Rastreio da Retinopatia Diabética,3,Normal,2,Appointment
+65,Centro de Mama,3,Normal,2,Appointment
+66,Radiologia,3,Normal,2,Appointment
+67,Senologia,1,Muito prioritário,2,Appointment
+68,Patologia Clinica - Hipocoagulação Oral,0,Sem prioridade atribuída,2,Appointment
+69,Cardiologia - Teleconsulta,3,Normal,2,Appointment
+70,Cirurgia Vascular,3,Normal,2,Appointment
+71,Medicina tropical,3,Normal,2,Appointment
+72,Pedopsiquiatria,3,Normal,2,Appointment
+73,Risco Familiar,3,Normal,2,Appointment
+74,CR Hepatobilio/Pancreático,3,Normal,2,Appointment
+75,CR Colon-Recto,0,Sem prioridade atribuída,2,Appointment
+76,Deterioração Cognitiva,0,Sem prioridade atribuída,2,Appointment
+77,Medicina Desportiva,0,Sem prioridade atribuída,2,Appointment
+78,Teleconsulta de Cirurgia Geral Feridas Complexas,3,Normal,2,Appointment
+79,PrEP - Consulta Profilaxia Pré-Exposição,3,Normal,2,Appointment
+80,Obstetrícia - Diagnóstico Pré-natal,3,Normal,2,Appointment
+81,Anestesiologia - Dor,3,Normal,2,Appointment
+82,Doenças autoimunes,3,Normal,2,Appointment
+83,Pé Diabético - Teleconsulta,0,Sem prioridade atribuída,2,Appointment
+84,Rastreio de Doenças Infecciosas,3,Normal,2,Appointment
+85,Cirurgia Pediátrica - Teleconsulta,0,Sem prioridade atribuída,2,Appointment
+86,Dermatologia - Teleconsulta,0,Sem prioridade atribuída,2,Appointment
+87,Fisiatria - Teleconsulta,0,Sem prioridade atribuída,2,Appointment
+88,Neurologia - Teleconsulta,2,Prioritário,2,Appointment
+89,Anestesiologia - Medicina Hiperbárica,3,Normal,2,Appointment
+90,Sono,1,Muito prioritário,2,Appointment
+91,Obstetrícia - Alto risco,3,Normal,2,Appointment
+92,Cirurgia Geral,0,1 - Doença não oncológica,1,Surgery
+93,Cirurgia Maxilo Facial,0,1 - Doença não oncológica,1,Surgery
+94,Cirurgia Pediátrica,0,1 - Doença não oncológica,1,Surgery
+95,Cirurgia Plástica  e Reconstrutiva,0,1 - Doença não oncológica,1,Surgery
+96,Cirurgia Vascular,0,1 - Doença não oncológica,1,Surgery
+97,Dermatologia,0,1 - Doença não oncológica,1,Surgery
+98,Ginecologia,0,1 - Doença não oncológica,1,Surgery
+99,Oftalmologia,0,1 - Doença não oncológica,1,Surgery
+100,Ortopedia,0,1 - Doença não oncológica,1,Surgery
+101,Otorrinolaringologia,0,1 - Doença não oncológica,1,Surgery
+102,Urologia,0,1 - Doença não oncológica,1,Surgery
+103,Anestesiologia,0,1 - Doença não oncológica,1,Surgery
+104,Cirurgia Cardiotorácica,0,1 - Doença não oncológica,1,Surgery
+105,Estomatologia,0,1 - Doença não oncológica,1,Surgery
+106,Nefrologia,0,1 - Doença não oncológica,1,Surgery
+107,Neurocirurgia,0,1 - Doença não oncológica,1,Surgery
+108,Obstetrícia,0,1 - Doença não oncológica,1,Surgery
+109,Senologia,0,1 - Doença não oncológica,1,Surgery
+110,Unidade Tratamento Cirúrgico da Obesidade,0,1 - Doença não oncológica,1,Surgery
+111,Cirurgia Cabeça e Pescoço,0,1 - Doença não oncológica,1,Surgery
+112,Radioterapia,0,1 - Doença não oncológica,1,Surgery
+113,Transplante Medula Óssea,0,1 - Doença não oncológica,1,Surgery
+114,Cirurgia Torácica,0,2 - Doença não oncológica,1,Surgery
+115,Radiodiagnóstico,0,1 - Doença não oncológica,1,Surgery
+116,Angiologia e Cirurgia Vascular,0,1 - Doença não oncológica,1,Surgery
+117,Cardiologia Geral,0,1 - Doença não oncológica,1,Surgery
+118,Dermato-Venereologia,0,1 - Doença não oncológica,1,Surgery
+119,Neuropatologia,0,1 - Doença não oncológica,1,Surgery
+120,Cirurgia Digestiva Baixa (cólon e recto),0,1 - Doença não oncológica,1,Surgery
+121,Gastroenterologia,0,1 - Doença não oncológica,1,Surgery
+122,Bloco,0,3,1,Surgery
+123,Transplante Hepático,0,1 - Doença não oncológica,1,Surgery
+124,Unidade de Queimados,0,2 - Doença não oncológica,1,Surgery
+125,Neuroradiologia,0,1 - Doença não oncológica,1,Surgery
+126,Pneumologia,0,1 - Doença não oncológica,1,Surgery
+127,Pediatria,0,1 - Doença não oncológica,1,Surgery
+128,Reumatologia,0,1 - Doença não oncológica,1,Surgery
+129,Ginecologia - Obstetrícia,0,1 - Doença não oncológica,1,Surgery
+130,Dor,0,1 - Doença não oncológica,1,Surgery

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConsultationReport>
+  <Header>
+    <HospitalId>151</HospitalId>
+    <HospitalName>Hospital de Santa Maria</HospitalName>
+    <ReferencePeriod>
+        <Year>2025</Year>
+        <Month>Fevereiro</Month>
+    </ReferencePeriod>
+    <SubmissionDate>2025-03-01T10:00:00</SubmissionDate>
+  </Header>
+  <Specialties>
+    <SpecialtyEntry>
+      <Name>Cardiologia</Name>
+      <TargetPopulation>Adulto</TargetPopulation>
+      <WaitListCounts>
+          <General>100</General>
+          <NonOncological>90</NonOncological>
+          <Oncological>10</Oncological>
+      </WaitListCounts>
+      <AverageWaitTimeDays>
+          <Normal>60.5</Normal>
+          <Priority>15.0</Priority>
+          <VeryPriority>5.0</VeryPriority>
+      </AverageWaitTimeDays>
+    </SpecialtyEntry>
+  </Specialties>
+</ConsultationReport>

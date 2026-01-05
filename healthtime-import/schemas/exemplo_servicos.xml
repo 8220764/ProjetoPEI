@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServicesReport>
+    <Services>   
+        <ServiceEntry>
+            <Code>848</Code>
+            <Description>Teste</Description>
+            <Type>Cirurgia</Type>
+            <PriorityCode>2</PriorityCode>
+        </ServiceEntry>
+    </Services>
+</ServicesReport>

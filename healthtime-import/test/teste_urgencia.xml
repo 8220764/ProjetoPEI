@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmergencyReport>
+  <Header>
+    <HospitalId>151</HospitalId>
+    <HospitalName>Hospital de Santa Maria</HospitalName>
+    <SubmissionTime>2025-12-31T15:00:00</SubmissionTime>
+  </Header>
+  <Services>
+    <Service>
+      <Type code="URGGER">Urgência Geral</Type>
+      <Address>Lisboa</Address>
+      <Status>Aberta</Status>
+      <Triage>
+        <Level color="Red">
+          <WaitingCount>1</WaitingCount>
+          <UnderObservationCount>0</UnderObservationCount>
+          <AverageWaitTimeMinutes>5</AverageWaitTimeMinutes>
+        </Level>
+        <Level color="Orange">
+          <WaitingCount>3</WaitingCount>
+          <UnderObservationCount>2</UnderObservationCount>
+          <AverageWaitTimeMinutes>20</AverageWaitTimeMinutes>
+        </Level>
+        <Level color="Yellow">
+          <WaitingCount>10</WaitingCount>
+          <UnderObservationCount>5</UnderObservationCount>
+          <AverageWaitTimeMinutes>60</AverageWaitTimeMinutes>
+        </Level>
+        <Level color="Green">
+          <WaitingCount>2</WaitingCount>
+          <UnderObservationCount>0</UnderObservationCount>
+          <AverageWaitTimeMinutes>120</AverageWaitTimeMinutes>
+        </Level>
+        <Level color="Blue">
+          <WaitingCount>0</WaitingCount>
+          <UnderObservationCount>0</UnderObservationCount>
+          <AverageWaitTimeMinutes>0</AverageWaitTimeMinutes>
+        </Level>
+      </Triage>
+    </Service>
+  </Services>
+</EmergencyReport>

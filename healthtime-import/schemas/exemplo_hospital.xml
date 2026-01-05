@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HospitalsData>
+    <Hospital>
+        <Name>Hospital de Santa Maria</Name>
+        <Region>Lisboa</Region>
+
+        <Address>
+            <Street>Avenida Professor Egas Moniz</Street>
+            <City>Lisboa</City>
+        </Address>
+
+        <Contacts>
+            <Phone>+351 217 805 000</Phone>
+            <Email>contactos@chln.min-saude.pt</Email>
+        </Contacts>
+
+        <Coordinates>
+            <Latitude>38.748316</Latitude>
+            <Longitude>-9.160824</Longitude>
+        </Coordinates>
+    </Hospital>
+
+    <Hospital>
+        <Name>Hospital de São João</Name>
+        <Region>Norte</Region>
+
+        <Address>
+            <Street>Alameda Professor Hernâni Monteiro</Street>
+            <City>Porto</City>
+        </Address>
+
+        <Contacts>
+            <Phone>+351 225 512 100</Phone>
+            <Email>geral@chsj.min-saude.pt</Email>
+        </Contacts>
+
+        <Coordinates>
+            <Latitude>41.181284</Latitude>
+            <Longitude>-8.600494</Longitude>
+        </Coordinates>
+    </Hospital>
+</HospitalsData>

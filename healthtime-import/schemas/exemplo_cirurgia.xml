@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SurgeryReport>
+    <Header>
+        <HospitalId>546</HospitalId>
+        <ReferencePeriod>
+            <Year>2025</Year>
+            <Month>Fevereiro</Month>
+        </ReferencePeriod>
+    </Header>
+    <Surgeries>
+        <SurgeryEntry>
+            <SpecialtyName>Cirurgia Geral</SpecialtyName>
+            <WaitListCounts>
+                <NonOncological>45</NonOncological>
+                <Oncological>2</Oncological>
+            </WaitListCounts>
+            <AverageWaitTimeDays>
+                <NonOncological>120.5</NonOncological>
+                <Oncological>15.0</Oncological>
+            </AverageWaitTimeDays>
+        </SurgeryEntry>
+        <SurgeryEntry>
+            <SpecialtyName>Ortopedia</SpecialtyName>
+            <WaitListCounts>
+                <NonOncological>150</NonOncological>
+                <Oncological>0</Oncological>
+            </WaitListCounts>
+            <AverageWaitTimeDays>
+                <NonOncological>200.0</NonOncological>
+                <Oncological>0.0</Oncological>
+            </AverageWaitTimeDays>
+        </SurgeryEntry>
+    </Surgeries>
+</SurgeryReport> 

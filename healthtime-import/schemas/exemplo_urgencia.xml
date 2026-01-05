@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmergencyReport>
+    <Header>
+        <HospitalId>546</HospitalId>
+        <SubmissionTime>2025-01-03T12:30:00</SubmissionTime>
+    </Header>
+    <Services>
+        <Service>
+            <Type code="1">Urgência Geral</Type>
+            <Status>Aberto</Status>
+            <Triage>
+                <Level color="Red">
+                    <WaitingCount>2</WaitingCount>
+                    <UnderObservationCount>5</UnderObservationCount>
+                    <AverageWaitTimeMinutes>0</AverageWaitTimeMinutes>
+                </Level>
+                <Level color="Yellow">
+                    <WaitingCount>15</WaitingCount>
+                    <UnderObservationCount>10</UnderObservationCount>
+                    <AverageWaitTimeMinutes>45</AverageWaitTimeMinutes>
+                </Level>
+            </Triage>
+        </Service>
+        <Service>
+            <Type code="2">Pediatria</Type>
+            <Status>Aberto</Status>
+            <Triage>
+                <Level color="Green">
+                    <WaitingCount>5</WaitingCount>
+                    <UnderObservationCount>2</UnderObservationCount>
+                    <AverageWaitTimeMinutes>20</AverageWaitTimeMinutes>
+                </Level>
+            </Triage>
+        </Service>
+    </Services>
+</EmergencyReport>

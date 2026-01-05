@@ -1,0 +1,161 @@
+{
+  "filename": "TemposEsperaEmergencia.csv",
+  "description": "Dados de tempos de espera em serviços de urgência hospitalares, atualizados a cada 15 minutos",
+  "updateFrequency": "15 minutos",
+  "columns": [
+    {
+      "name": "LastUpdate",
+      "type": "DateTime",
+      "format": "ISO 8601 (YYYY-MM-DDTHH:mm:ss.SSS)",
+      "description": "Data e hora da última atualização dos dados no sistema do hospital",
+      "required": true,
+      "example": "2025-02-16T11:25:53.679"
+    },
+    {
+      "name": "extractionDate",
+      "type": "DateTime",
+      "format": "ISO 8601 (YYYY-MM-DDTHH:mm:ss.SSSZ)",
+      "description": "Data e hora de extração/recolha dos dados pelo sistema HealthTime",
+      "required": true,
+      "example": "2025-02-16T11:37:54.852Z"
+    },
+    {
+      "name": "institutionId",
+      "type": "Integer",
+      "description": "Identificador único do hospital/instituição de saúde",
+      "required": true,
+      "example": "151",
+      "notes": "Referência para ficheiro Hospitais.csv"
+    },
+    {
+      "name": "EmergencyType.Code",
+      "type": "String/Integer",
+      "description": "Código da tipologia do serviço de urgência",
+      "required": true,
+      "example": "1, URGGER, URGPED",
+      "allowedValues": ["1", "2", "3", "4", "5", "6", "9", "10", "21", "31", "URGGER", "URGPED", "URGGIN", "CHUA050D", "CHUA75E4", "CHTVF6E0", "CHTV6429", "CHTV289C", "CHLN1B20", "URGGO"]
+    },
+    {
+      "name": "EmergencyType.Description",
+      "type": "String",
+      "description": "Descrição textual da tipologia do serviço de urgência",
+      "required": true,
+      "example": "Urgência Geral, Urgência Pediátrica, Urgência Obstétrica",
+      "allowedValues": [
+        "Urgência Geral",
+        "Urgência Pediátrica",
+        "Urgência Obstétrica",
+        "Urgência Ginecológica",
+        "Urgência Pedopsiquiátrica",
+        "Urgência Psiquiátrica",
+        "Urgência Polivalente",
+        "Urgência Básica",
+        "Urgência Oftalmológica",
+        "Urgência Obstétrica / Ginecológica",
+        "SERVICO URGENCIA BASICO",
+        "SU Geral",
+        "SU Pediátrica",
+        "Urgência Central",
+        "Urgência Ginecologia / Obstetricia"
+      ]
+    },
+    {
+      "name": "Triage.Red.Time",
+      "type": "Integer",
+      "description": "Tempo médio de espera (em minutos) para 1ª observação médica - categoria VERMELHO (Emergente)",
+      "required": true,
+      "unit": "minutos",
+      "triageLevel": "Emergente/Muito Urgente",
+      "example": "0"
+    },
+    {
+      "name": "Triage.Red.Length",
+      "type": "Integer",
+      "description": "Número de utentes em espera para 1ª observação médica - categoria VERMELHO (Emergente)",
+      "required": true,
+      "unit": "utentes",
+      "triageLevel": "Emergente/Muito Urgente",
+      "example": "0"
+    },
+    {
+      "name": "Triage.Orange.Time",
+      "type": "Integer",
+      "description": "Tempo médio de espera (em minutos) para 1ª observação médica - categoria LARANJA (Muito Urgente)",
+      "required": true,
+      "unit": "minutos",
+      "triageLevel": "Muito Urgente",
+      "example": "326"
+    },
+    {
+      "name": "Triage.Orange.Length",
+      "type": "Integer",
+      "description": "Número de utentes em espera para 1ª observação médica - categoria LARANJA (Muito Urgente)",
+      "required": true,
+      "unit": "utentes",
+      "triageLevel": "Muito Urgente",
+      "example": "0"
+    },
+    {
+      "name": "Triage.Yellow.Time",
+      "type": "Integer",
+      "description": "Tempo médio de espera (em minutos) para 1ª observação médica - categoria AMARELO (Urgente)",
+      "required": true,
+      "unit": "minutos",
+      "triageLevel": "Urgente",
+      "example": "354"
+    },
+    {
+      "name": "Triage.Yellow.Length",
+      "type": "Integer",
+      "description": "Número de utentes em espera para 1ª observação médica - categoria AMARELO (Urgente)",
+      "required": true,
+      "unit": "utentes",
+      "triageLevel": "Urgente",
+      "example": "1"
+    },
+    {
+      "name": "Triage.Green.Time",
+      "type": "Integer",
+      "description": "Tempo médio de espera (em minutos) para 1ª observação médica - categoria VERDE (Pouco Urgente)",
+      "required": true,
+      "unit": "minutos",
+      "triageLevel": "Pouco Urgente",
+      "example": "373"
+    },
+    {
+      "name": "Triage.Green.Length",
+      "type": "Integer",
+      "description": "Número de utentes em espera para 1ª observação médica - categoria VERDE (Pouco Urgente)",
+      "required": true,
+      "unit": "utentes",
+      "triageLevel": "Pouco Urgente",
+      "example": "2"
+    },
+    {
+      "name": "Triage.Blue.Time",
+      "type": "Integer",
+      "description": "Tempo médio de espera (em minutos) para 1ª observação médica - categoria AZUL (Não Urgente)",
+      "required": true,
+      "unit": "minutos",
+      "triageLevel": "Não Urgente",
+      "example": "0"
+    },
+    {
+      "name": "Triage.Blue.Length",
+      "type": "Integer",
+      "description": "Número de utentes em espera para 1ª observação médica - categoria AZUL (Não Urgente)",
+      "required": true,
+      "unit": "utentes",
+      "triageLevel": "Não Urgente",
+      "example": "0"
+    }
+  ],
+  "notes": [
+    "Sistema de Triagem de Manchester com 5 níveis de prioridade",
+    "Dados reportados a cada 15 minutos",
+    "Valores de tempo em minutos, valores de length em número de utentes",
+    "Alguns hospitais podem não reportar todas as tipologias de urgência",
+    "Assume-se que os dados foram recolhidos com urgência aberta"
+  ],
+  "relatedFiles": ["Hospitais.csv"]
+}

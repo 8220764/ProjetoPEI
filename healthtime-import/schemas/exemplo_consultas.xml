@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConsultationReport>
+    <Header>
+        <HospitalId>1</HospitalId>
+        <ReferencePeriod>
+            <Year>2024</Year>
+            <Month>Outubro</Month>
+        </ReferencePeriod>
+    </Header>
+    <Specialties>
+        <SpecialtyEntry>
+            <ServiceKey>101</ServiceKey>
+            <Name>Cardiologia</Name>
+            <TargetPopulation>Adultos</TargetPopulation>
+            <WaitListCounts>
+                <NonOncological>120</NonOncological>
+                <Oncological>5</Oncological>
+            </WaitListCounts>
+            <AverageWaitTimeDays>
+                <Normal>150.5</Normal>
+                <Priority>45.0</Priority>
+                <VeryPriority>10.0</VeryPriority>
+            </AverageWaitTimeDays>
+        </SpecialtyEntry>
+
+        <SpecialtyEntry>
+            <ServiceKey>102</ServiceKey>
+            <Name>Dermatologia</Name>
+            <TargetPopulation>Geral</TargetPopulation>
+            <WaitListCounts>
+                <NonOncological>300</NonOncological>
+                <Oncological>12</Oncological>
+            </WaitListCounts>
+            <AverageWaitTimeDays>
+                <Normal>200.0</Normal>
+                <Priority>60.0</Priority>
+                <VeryPriority>15.0</VeryPriority>
+            </AverageWaitTimeDays>
+        </SpecialtyEntry>
+    </Specialties>
+</ConsultationReport>
